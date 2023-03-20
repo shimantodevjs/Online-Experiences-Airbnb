@@ -44,12 +44,27 @@ nav{
 
 .card-header{
     font-size: 14px;
+    
+}
+
+.ratings{
+    margin-right: 2px;
 }
 
 .reviews{
-    margin-right: 10px;
+    margin-right: 5px;
+    opacity: 0.7;
+}
+
+.address{
+    opacity: 0.7;
 }
 
 .title{
     width: 200px;
+    margin: 5px 0;
+}
+
+i{
+    color: #ff5a5f;
 }
