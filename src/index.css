@@ -35,6 +35,17 @@ nav{
 .card-container{
    margin-left: 50px;
    margin-bottom: 50px;
+   position: relative;
+}
+
+.card-badge{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #fff;
+    padding: 4px;
+    font-size: 12px;
+    border-radius: 2px;
 }
 
 .cards-list{

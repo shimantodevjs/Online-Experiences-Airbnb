@@ -7,13 +7,9 @@ import About from "./components/about";
 function App() {
 
   const cardComp = data.map(cards=>{
-    return ( <Card 
-                img= {cards.coverImg}
-                ratings={cards.stats.rating}
-                reviews={cards.stats.reviewCount}
-                location={cards.location}
-                title={cards.title}
-                price={cards.price}
+    return ( <Card
+                key={cards.id}
+                {...cards}
                 />
     )
   })
