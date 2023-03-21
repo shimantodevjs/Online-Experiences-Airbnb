@@ -1,21 +1,30 @@
 import Logo from "./components/nav";
 import Hero from "./components/hero";
 import Card from "./components/card";
-import img from "./image/work.png"
+import data from "./data";
+import About from "./components/about";
 
 function App() {
+
+  const cardComp = data.map(cards=>{
+    return ( <Card 
+                img= {cards.coverImg}
+                ratings={cards.stats.rating}
+                reviews={cards.stats.reviewCount}
+                location={cards.location}
+                title={cards.title}
+                price={cards.price}
+                />
+    )
+  })
+
   return ( <div className="app">
                 <Logo />
                 <Hero />
-                <Card 
-                img={img}
-                ratings={4.98}
-                reviews={928}
-                address="Portugal"
-                title="Software Development,
-                       Best Design with rafael"
-                price={4621}
-                />
+                <section className="cards-list">
+                {cardComp}
+                </section>
+                <About />
            </div>  
   );
 }

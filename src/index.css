@@ -37,8 +37,14 @@ nav{
    margin-bottom: 50px;
 }
 
+.cards-list{
+    display: flex;
+    justify-content: start;
+    overflow-x: auto;
+}
+
 .card-container img{
-    height: 250px;
+    height: 300px;
     border-radius: 20px;
 }
 
@@ -67,4 +73,11 @@ nav{
 
 i{
     color: #ff5a5f;
+}
+
+/* about.js */
+
+.about{
+    text-align: center;
+    margin: 50px;
 }
